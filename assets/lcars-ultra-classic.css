@@ -1601,6 +1601,9 @@ blockquote {
 .buttons a.two-rows {
 	padding-top: 4px;
 }
+.buttons a.rect {
+	border-radius: 0;
+}
 
 .sidebar-buttons a {
 	display: block;
