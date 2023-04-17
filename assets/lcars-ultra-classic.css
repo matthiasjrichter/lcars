@@ -1601,9 +1601,7 @@ blockquote {
 .buttons a.two-rows {
 	padding-top: 4px;
 }
-.buttons a.rect {
-	border-radius: 0;
-}
+
 
 .sidebar-buttons a {
 	display: block;
@@ -2087,4 +2085,23 @@ footer::after {
 	.bar-6 {
 		width: 90px;
 	}
+}
+
+/* Additions by Matthias J. Richter */
+
+em {
+color: #ff2200
+}
+
+strong {
+color: #ffaa00
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/*rectangular buttons*/
+.buttons a.rect {
+	border-radius: 0;
 }
