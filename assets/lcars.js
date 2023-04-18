@@ -32,3 +32,13 @@ function refreshTime() {
   timeDisplay.textContent = formattedString;
 }
   setInterval(refreshTime, 1000);
+
+  //random number generator. Creates A number up to 4 digits
+  //to add it give class "randomNum4"
+
+  function randomNum4(){
+    document.querySelector(".randomNum4").innerText =  Math.floor(Math.random()*10000)
+  }
+  randomNum4()
+
+  

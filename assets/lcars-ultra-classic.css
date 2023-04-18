@@ -708,7 +708,7 @@ a:active {
 	flex-direction: column;
 	justify-content: space-between;
 	padding-top: 90px;
-	background-color: #d44;
+	background-color: #ffaa90; /*was #d44*/
 	border-radius: 140px 0 0 0;
 }
 
@@ -1210,18 +1210,18 @@ nav a:hover {
 
 .bar-6	{
 	width: 433px;
-	background-color: #d44;
+	background-color: #ffaa90;
 }
 
 .bar-7	{
 	width: 40px;
-	background-color: #ffaa90;
+	background-color: #d44;
 }
 
 .bar-8	{
 	width: 200px;
 	height: 11px;
-	background-color: #d44;
+	background-color: #ffaa90;
 }
 
 .bar-9	{
@@ -1311,7 +1311,7 @@ nav a:hover {
 	display: block;
 	width: 60px;
 	height: 60px;
-	background: linear-gradient(to bottom right, #d44 50%, #000 50%);
+	background: linear-gradient(to bottom right, #ffaa90 50%, #000 50%);
 	position: absolute;
 	left: 0;
 	top: 22px;
