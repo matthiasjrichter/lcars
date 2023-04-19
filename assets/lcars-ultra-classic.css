@@ -1623,6 +1623,10 @@ blockquote {
 		text-align: center;
 		padding-block: 9px;
 	}
+	.panel-3 {				/*Added to make submenu centered, too*/
+		text-align: center;
+		
+	}
 }
 
 .lcars-bar {
@@ -2090,7 +2094,7 @@ footer::after {
 /* Additions by Matthias J. Richter */
 
 em {
-color: #ff2200
+color: #dd4444
 }
 
 strong {
