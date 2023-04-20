@@ -2101,6 +2101,11 @@ strong {
 color: #ffaa00
 }
 
+del {
+	text-decoration-color: #dd4444;
+}
+
+/* Not sure if I want to scroll smoothly. Might delete this and also the smooth scrolling of the "screen top" button. */
 html {
 	scroll-behavior: smooth;
 }

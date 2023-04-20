@@ -41,4 +41,3 @@ function refreshTime() {
   }
   randomNum4()
 
-  
