@@ -1,14 +1,17 @@
 document.addEventListener("touchstart", function() {},false);
 
+
+
 $(window).scroll(function() {
     var height = $(window).scrollTop();
     if (height > 100) {
-        $('.scroll-top a').fadeIn();
+        $('.scroll-top a').fadeIn(); //chenge fadeIn() to show() to delete effect
     } else {
-        $('.scroll-top a').fadeOut();
+        $('.scroll-top a').fadeOut(); //change fadeOut() to hide() to delete effect
     }
 });
 
+// delete this for non-smooth scroll behavior:
 $(document).ready(function() {
     $("#scroll-top").click(function(event) {
         event.preventDefault();
@@ -41,3 +44,4 @@ function refreshTime() {
   }
   randomNum4()
 
+  

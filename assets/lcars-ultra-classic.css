@@ -2114,3 +2114,17 @@ html {
 .buttons a.rect {
 	border-radius: 0;
 }
+
+/*pill right buttons*/
+
+.buttons a.left-pill {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.buttons a.right-pill {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	text-align: left;
+	padding-left: 25px;
+}
