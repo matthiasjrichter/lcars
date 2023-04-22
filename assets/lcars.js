@@ -44,4 +44,23 @@ function refreshTime() {
   }
   randomNum4()
 
-  
+  //NASA APOD API
+//document.querySelector('h1').addEventListener('click', getFetch)
+
+function getFetch(){
+  //const choice = document.querySelector('input').value
+  const url = "https://api.nasa.gov/planetary/apod?api_key=vbdTJiJ7bXiae5JtJOHkYQIFFWdysEwR0XQ1mknI"//+choice
+  fetch(url)
+      .then(res => res.json()) // parse response as JSON
+      .then(data => {
+        //console.log(data)
+        document.querySelector('.apod-title').innerText = data.title
+        document.querySelector('.apod-explanation').innerText = data.explanation
+        document.querySelector('.apod-img').src = data.url
+        document.querySelector('.apod-hdurl').href = data.hdurl
+      })
+      .catch(err => {
+          console.log(`error ${err}`)
+      });
+}
+getFetch()

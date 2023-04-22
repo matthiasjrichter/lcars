@@ -1633,8 +1633,8 @@ blockquote {
 	margin: 40px auto;
 	height: 20px;
 	background-color: #000;
-	border-right: 18px solid #94f;
-	border-left: 18px solid #94f;
+	border-right: 18px solid #78f;
+	border-left: 18px solid #78f;
 	border-radius: 9px;
 	padding-inline: 5px;
 }
@@ -1652,7 +1652,7 @@ blockquote {
 	border-radius: 14px;
 	height: 32px;
 	background-color: #ffaa90;
-	border-right: 28px solid #dbf;
+	border-right: 28px solid #78f;
 	border-left: 28px solid #d44;
 }
 
