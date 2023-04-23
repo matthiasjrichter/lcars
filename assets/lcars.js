@@ -44,10 +44,14 @@ function refreshTime() {
   }
   randomNum4()
 
-  //NASA APOD API
+////////
+//APIs//
+////////
+
+//NASA APOD API
 //document.querySelector('h1').addEventListener('click', getFetch)
 
-function getFetch(){
+function getAPOD(){
   //const choice = document.querySelector('input').value
   const url = "https://api.nasa.gov/planetary/apod?api_key=vbdTJiJ7bXiae5JtJOHkYQIFFWdysEwR0XQ1mknI"//+choice
   fetch(url)
@@ -63,4 +67,29 @@ function getFetch(){
           console.log(`error ${err}`)
       });
 }
-getFetch()
+getAPOD()
+
+//
+function getAPI(){
+  //const choice = document.querySelector('input').value
+  const url = "http://wttr.in/?format=j1"//+choice
+  fetch(url)
+      .then(res => res.json()) // parse response as JSON
+      .then(data => {
+        console.log(data.current_condition)
+        console.log(data.current_condition[0].weatherDesc[0])
+        document.querySelector('.wttrTmpC').innerText = data.current_condition[0].temp_C // temperature in °C
+        document.querySelector('.wttrDscr').innerText = data.current_condition[0].weatherDesc[0].value //weather description (i.e. "cloudy")
+        document.querySelector('.wttrWndSpdKm').innerText = data.current_condition[0].temp_C // windspeed in kmph
+        document.querySelector('.wttrWndDrct').innerText = data.current_condition[0].winddir16Point // wind direction (i.e. SSE, N)
+        document.querySelector('.wttrWndDgr').innerText = data.current_condition[0].winddirDegree // wind direction in degrees
+      })
+      .catch(err => {
+          console.log(`error ${err}`)
+      });
+}
+getAPI()
+
+
+//
+

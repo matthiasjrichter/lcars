@@ -47,9 +47,9 @@
 			
 			<div class="lcars-list-2 uppercase">
 				<ul>
-					<li>Subspace Link: Established</li>
-					<li>Starfleet Database: Connected</li>
-					<li>Quantum Memory Field: stable</li>
+					<li>Weather: <span class="wttrDscr"></span></li>
+					<li>Temperature: <span class="wttrTmpC"></span> °C</li>
+					<li>Wind: <span class="wttrWndSpdKm"></span> km/h <span class="wttrWndDrct"></span> (<span class="wttrWndDgr"></span>°)</li>
 					<li class="oc-almond-creme go-almond-creme">Widescreen Display: detected</li>
 				</ul>
 			</div>
@@ -109,7 +109,7 @@
 							<a href="" class="african-violet" id="b-four">02-Database</a>
 							<a href="" id="african-violet">03-Apps</a>
 							<a href="#" id="african-violet">04-Contact</a>  <!-- removed: class="go-away" -->
-							<a href="#" id="b-five">05-Impress</a>							
+							<a href="#" id="b-five">05-Legal Notice</a>							
 						</nav>
 					</div>
 					<div class="bar-panel first-bar-panel">
@@ -127,8 +127,8 @@
 						<div class="panel-3"><span class="hop">SUB</span>MENU</div> <!--Home-->
 						<div class="sidebar-buttons"> <!--Sidebar Buttons-->
 							<a href="#updates"class="gold">Updates</a>
-							<a href="#todo" class="african-violet">Todo</a>
-							<a href="#guidelines" class="african-violet">GUIDE<span class="hop">LINES</span></a>
+							<a href="#todo">Todo</a>
+							<a href="#guidelines">GUIDE<span class="hop">LINES</span></a>
 						  </div>
 						<!-- <div class="panel-4">C0<span class="hop">-071215</span></span></div> -->
 						<!-- <div class="panel-5">06<span class="hop">-071984</span></div>  -->
@@ -158,7 +158,9 @@
 						<!-- <h2>Welcome to LCARS <span class="go-tomato">Ultra</span> &#149; Classic Theme</h2> -->
 						<h2>Welcome to my little project website</h2>
 
-						<p>I recently discovered this awesome html template by <a href="https://www.thelcars.com" target="_blank">www.TheLCARS.com</a> and I <em>have to</em> play around with it.</p>
+						<p>I recently discovered this awesome HTML template by <a href="https://www.thelcars.com" target="_blank">www.TheLCARS.com</a> and I <em>have to</em> play around with it.</p>
+						
+						
 						
 						<p>Live long and prosper. <i class="fa fa-hand-spock-o" aria-hidden="true"></i></p>
 						<br id="updates">
@@ -191,12 +193,13 @@
 							  <h3>Other stuff</h3>
 							  <p><ul class="lcars-list">
 								<li>Integrated <a href="https://api.nasa.gov/" target="_blank">NASA API</a> to get <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">Astronomy Picture of the Day</a>.</li>
+								<li>Integrated <a href="https://github.com/chubin/wttr.in" target="_blank">WTTR</a> API to get weather at user location. Used in widescreen sidebar.</li>
+								<li>Colors have more meaning now. Check <a href="#guidelines">guidelines</a>.</li>
 								<li>Added CSS rules to make <em>&lt;em&gt;</em> red and <strong>&lt;strong&gt;</strong> gold.</li>
 								<li>Added current system time and date to top left elbow element (hidden on small screens).</li>
-								<li>Added random number generator. Creates a number up to 4 digits. <s>Currently used for the topmost element in the secondary sidebar (the one that shows up next to the submenu on larger screens)</s></li>
+								<li>Added random number generator. Creates a number up to 4 digits. Used in the footer.</li>
 								<li>Main sidebar ("left-frame") is now<span class="go-almond"> almond #ffaa99</span> </li>
 								<li>column-2 is hidden (for now). Too much clutter on Widescreen displays.</li>
-								<li>Added mockup of NASA APOD to column-1 for widescreen displays</li>
 								<li>Integrated <a href="fontawesome.me" target="_blank">forkawesome.me</a> just for the vulcan salute: <i class="fa fa-hand-spock-o go-gold" aria-hidden="true"></i></li>
 								<li>Added CSS rule to make &lt;del&gt; strikethrough red to distinguish it from &lt;s&gt;. <del>I am deleted.</del></li>
 							  </ul></p>
@@ -208,9 +211,7 @@
 							<span>ToDo</span>
 						  </div>
 						  <ul class="lcars-list">
-							<li class="oc-gold">Declutter everything. Currently there are too many elements that don't do anything.</li>
-							<li>Make colors have more meaning.</li>
-							
+							<li class="oc-gold">Declutter everything. Currently there are <s>too many</s> still some elements that don't do anything.</li>					
 						  </ul>
 
 
