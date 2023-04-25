@@ -61,6 +61,7 @@ function getAPOD(){
         document.querySelector('.apod-title').innerText = data.title
         document.querySelector('.apod-explanation').innerText = data.explanation
         document.querySelector('.apod-img').src = data.url
+        //document.querySelector('.apod-img').alt = data.title
         document.querySelector('.apod-hdurl').href = data.hdurl
       })
       .catch(err => {
