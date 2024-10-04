@@ -10,7 +10,7 @@ Playing around with the template from https://www.thelcars.com/, adding APIs, CS
 
 ## Optimizations
 
-1. Possibly upgrade to the newest version of the template.
+1. Possibly upgrade to the next version of the template.
 2. Declutter everything. Currently there are still some elements that don't do anything.
 3. Make the ultrawide sidebar visible on widescreen displays.
 
